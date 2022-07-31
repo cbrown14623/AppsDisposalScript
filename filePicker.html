@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base target="_top">
+  <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css" />
+
+  <?!= include("JS"); ?>
+
+
+  <style>
+    /* Center the message text and create black background. */
+    body {
+      background-image: url('https://drive.google.com/uc?id=1rGoVMf4bBAqX0Ypjd9dXKCcF49hfVsrf');
+      background-repeat: no-repeat;
+      width: 400px;
+      height: 400px;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    #message {
+
+      position: fixed;
+      top: 0;
+      left: 50%;
+
+    }
+  </style>
+
+</head>
+
+<body>
+ 
+  <!-- Provide either a processing messag or any relevant error messages.  -->
+  <div id="message" class="current">Processing...</div>
+
+  <!-- Load the Google API Loader script. -->
+  <script async defer type="text/javascript" src="https://apis.google.com/js/api.js?onload=onApiLoad"></script>
+
+</body>
+
+</html>
